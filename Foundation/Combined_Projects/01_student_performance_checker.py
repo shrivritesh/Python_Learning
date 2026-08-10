@@ -2,17 +2,17 @@
 
 **Age Validation Rules**
 age < 0    → Invalid age
-0–12       → Child
-13–17      → Teenager
+0-12       → Child
+13-17      → Teenager
 18+        → Adult
 
 marks grade rules
-90–100 → A
-80–89  → B
-70–79  → C
-60–69  → D
-40–59  → E
-0–39   → Fail
+90-100 → A
+80-89  → B
+70-79  → C
+60-69  → D
+40-59  → E
+0-39   → Fail
 
 """
 
@@ -28,10 +28,10 @@ Chemistry = int(input("Enter Chemistry marks: "))
 English = int(input("Enter English marks: "))
 Computer = int(input("Enter Computer marks: "))
 
-
 total_marks = 0
 percentage = 0
 grade = "Invalid marks!"
+
 # Validate Marks.
 valid_marks= True
 
@@ -104,3 +104,6 @@ print(f"Grade: {grade}")
 # A condition decides what happens, and a variable can store the result for later use.
 
 
+# Remember this project as:
+
+# Input → Validate → Store → Calculate → Decide → Report
