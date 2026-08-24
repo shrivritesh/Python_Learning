@@ -177,9 +177,68 @@ The focus is not just on completing topics, but on:
 
 # 🚀 Combined Project
 
-## 🎓 Student Performance Analyzer
+# 🚀 Combined & Practical Projects
 
-A Python-based program that analyzes student marks and generates a performance report.
+## 1. 🎓 Student Report & Grade Analyzer
+
+A Python program that takes student information and subject marks, validates the input, calculates percentage, determines the grade, and generates a student report.
+
+### Features
+
+- Student information input
+- Age validation
+- Age categorization
+- Subject marks validation
+- Total marks calculation
+- Percentage calculation
+- Grade classification
+- Formatted student report
+
+### Concepts Used
+
+- Variables
+- Input / Output
+- Conditionals
+- Boolean values
+- Logical operators
+- Arithmetic operators
+
+---
+
+## 2. 🔢 Number Analyzer
+
+A Python program for analyzing numbers using fundamental Python concepts.
+
+### Concepts Used
+
+- Variables
+- Input / Output
+- Conditionals
+- Loops
+- Numbers
+- Lists
+- Basic calculations
+
+---
+
+## 3. 🎓 Student Marks Tuple Analyzer
+
+A practical project for analyzing student marks using tuples.
+
+### Concepts Used
+
+- Tuples
+- Indexing
+- Iteration
+- Calculations
+- Conditionals
+- Functions
+
+---
+
+## 4. 📊 Student Performance Analyzer
+
+A Python program that analyzes multiple students and generates a performance report.
 
 ### Features
 
@@ -189,7 +248,17 @@ A Python-based program that analyzes student marks and generates a performance r
 - Identify the top-performing student
 - Find unique performance categories
 
-### Example
+### Concepts Used
+
+- Dictionaries
+- Lists
+- Sets
+- Functions
+- Loops
+- Conditionals
+- Nested dictionaries
+
+### Example Output
 
 ```text
 ======================= Student Performance Analyzer =======================
