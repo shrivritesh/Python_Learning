@@ -362,7 +362,7 @@ while count < numbers:
 print("Sum of positive numbers :->",total)
 
 
-# 🟢 Q27 — Sum of Negative Numbers
+# 🟢 Q28 — Sum of Negative Numbers
 print("***********************Sum of Negative numbers :***********************")
 numbers = int(input("How many numbers do you want to enter: ."))
 count = 0

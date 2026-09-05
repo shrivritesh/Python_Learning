@@ -21,6 +21,9 @@ Requirements:
 - Use a for loop to analyze the collected numbers.
 - Use conditions to classify the numbers.
 - Display a final result/report at the end.
+
+WHILE → Collect 🔄
+FOR   → Analyze 🔍
 """
 
 print("=========== Number Analyzer Program ===========")

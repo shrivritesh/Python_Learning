@@ -71,10 +71,10 @@ stop - exludes
 step - how many jump to each step
 
 ## 6. Tuple Methods
-tuple has two important methods 
+tuple has two important built-in methods.
 ### count()
 ```
-number of occurence of elements in tuple.
+`count()` returns the number of times a specific value occurs in a tuple.
 numbers = (10, 20, 10, 30, 10)
 print(numbers.count(10))
 # 3
@@ -84,42 +84,264 @@ Returns the index of the first occurrence of a value.
 ```
 numbers = (10, 20, 10, 30, 10)
 print(numbers.index(10))
-# 1
+# 0
 ```
 ## 7. Tuple Packing
 
+Tuple packing means putting multiple values together into a single tuple.
+
+### Example
+
+```python
+languages = "Python", "Django", "FastAPI"
+
+print(languages)
+# ("Python", "Django", "FastAPI")
+```
+
+## 8. Tuple Unpacking
 ## 8. Tuple Unpacking
 
+Tuple unpacking means assigning the elements of a tuple to multiple variables.
+
+### Example
+
+```python
+data = ("Python", "Django", "FastAPI")
+
+language, framework, api = data
+
+print(language)
+# Python
+
+print(framework)
+# Django
+
+print(api)
+# FastAPI
+```
+
 ## 9. Extended Unpacking
+one variable to collect multiple values. That's where * is used.
+Syntax:
+first, *middle, last = data --> *middle always return list of element
+The *middle variable collects all remaining values into a list.
+
+Extended unpacking → * collects multiple remaining values into a list.
 
 ## 10. Looping Through Tuples
+
+## 10. Looping Through Tuples
+
+A `for` loop can be used to access each element of a tuple one by one.
+
+### Example
+
+```python
+languages = ("Python", "Django", "FastAPI", "Docker")
+
+for language in languages:
+    print(language)
+```
+
+Output:
+
+```text
+Python
+Django
+FastAPI
+Docker
+```
+
+### Using `enumerate()`
+
+`enumerate()` gives both the index and value while looping.
+
+```python
+for index, language in enumerate(languages):
+    print(index, language)
+```
+
+Output:
+
+```text
+0 Python
+1 Django
+2 FastAPI
+3 Docker
+```
+
+### 🧠 Remember
+
+```text
+for item in tuple
+→ value
+
+enumerate(tuple)
+→ index + value
+```
+
 ### for loop
 ### enumerate()
 
 ## 11. Membership Operators
-### in
-### not in
+
+Membership operators are used to check whether a value exists in a tuple.
+
+### `in`
+
+`in` returns `True` if the value exists in the tuple.
+
+```python
+languages = ("Python", "Django", "FastAPI")
+
+print("Python" in languages)
+# True
+
+print("Java" in languages)
+# False
+```
 
 ## 12. Tuple Concatenation
+using + operator 
+
+Tuple concatenation means combining two or more tuples using the `+` operator.
+
+### Example
+
+```python
+a = (1, 2, 3)
+b = (4, 5, 6)
+
+result = a + b
+
+print(result)
+# (1, 2, 3, 4, 5, 6)
+```
+
 ### + operator
+ is used to combine two tuple into a single tuple
 
 ## 13. Tuple Repetition
+
+Tuple repetition is used to repeat the elements of a tuple using the `*` operator.
+
+### Example
+
+```python
+numbers = (1, 2)
+
+result = numbers * 3
+
+print(result)
+# (1, 2, 1, 2, 1, 2)
+```
 ### * operator
+to repeat the elements of tuple using * 
 
 ## 14. Tuple Comparison
 
-## 15. Built-in Functions
-### len()
+Tuples can be compared using comparison operators such as:
+
+`==`, `!=`, `<`, `>`, `<=`, `>=`
+
+### Equality
+
+Two tuples are equal when they contain the same elements in the same order.
+
+```python
+a = (1, 2, 3)
+b = (1, 2, 3)
+
+print(a == b)
+# True
+```
+## 15. Built-in Functions with Tuples
+
+Python provides several built-in functions that can be used with tuples.
+
+### `len()`
+
+Returns the number of elements.
+
+```python
+marks = (85, 72, 91, 68)
+
+print(len(marks))
+# 4
+```
 ### min()
+``min``
+return smallest number of elements
 ### max()
+return highest number of elements.
 ### sum()
+total of numeric elements
 
 ## 16. List ↔ Tuple Conversion
 
-## 17. Functions vs Methods
+using list(tup)
+using tuple(list)
+## 16. List ↔ Tuple Conversion
 
-## 18. Important Differences
-### List vs Tuple
+Python provides built-in functions to convert between lists and tuples.
+
+### Tuple → List
+
+Use `list()`:
+
+```python
+languages = ("Python", "Django", "FastAPI")
+
+languages_list = list(languages)
+
+print(languages_list)
+# ["Python", "Django", "FastAPI"]
+```
+
+## 17. Functions vs Methods
+### Function
+
+A function is called directly and can operate on data passed to it.
+
+```python
+numbers = (10, 20, 30)
+
+print(len(numbers))
+print(sum(numbers))
+```
+### methods
+A method is associated with an object/type and is called using dot . notation.
+languages = ("Python", "Django", "Python")
+
+print(languages.count("Python"))
+print(languages.index("Django"))
+
+###  Tuple vs List
+
+Add:
+
+```markdown
+## 18. Tuple vs List
+
+| Feature | List | Tuple |
+|---|---|---|
+| Syntax | `[]` | `()` |
+| Ordered | Yes | Yes |
+| Mutable | Yes | No |
+| Duplicates | Allowed | Allowed |
+| Indexing | Yes | Yes |
+| Slicing | Yes | Yes |
+| `append()` | Yes | No |
+| `remove()` | Yes | No |
+| `count()` | Yes | Yes |
+| `index()` | Yes | Yes |
+
+### 🧠 Main Difference
+
+List → mutable
+
+Tuple → immutable
 ### Tuple Method vs Built-in Function
 
 ## 19. Mini Project

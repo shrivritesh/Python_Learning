@@ -277,7 +277,7 @@ list[start:stop:step]
 
 start-> from where to start / 
 stop -> where to stop
-step -> how many position to jump 
+step -> how many position to move at each step
 # Start = where, Stop = until where, Step = how far each jump.
 
 ## 7. Membership Operators
@@ -321,8 +321,6 @@ for index, language in enumerate(languages):
 #2 FastAPI
     
 ```
-
-## 🟢 Section 9: Nested Lists
 ## 9. Nested Lists
 
 A nested list is a list that contains other lists as its elements.

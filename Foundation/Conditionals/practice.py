@@ -2,6 +2,8 @@
 **Q.What is a Conditional?**
 >A conditional statement allows a program to make a decision based on whether a condition is True or False.
 
+
+
 if statements:
 
 if condition:
@@ -37,6 +39,12 @@ else   → If nothing worked
 if    → check the first condition
 elif  → check another condition if the previous one was False
 else  → run if all conditions were False
+
+
+
+if → checks the first condition.
+elif → checks another condition if the previous one was false.
+else → runs when none of the previous conditions are true.
 """
 
 
@@ -46,22 +54,3 @@ if age >= 18:
 else:
     print("Minor :")
 
-
-# if    → invalid
-# elif  → child
-# elif  → teenager
-# elif  → adult
-# else  → senior
-
-age = int(input("Enter your age: "))
-
-if age < 0:
-    print("Invalid Age!")
-elif age <= 12:
-    print("Child")
-elif age <= 17:
-    print("Teenager!")
-elif age < 60:
-    print("Adult!!")
-else:
-    print("senior")

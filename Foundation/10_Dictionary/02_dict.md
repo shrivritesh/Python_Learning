@@ -430,4 +430,189 @@ print("name" in student)
 print("city" in student)
 # False
 
+``not in 
 print("Location", not in student)
+
+## 13. Looping Through Dictionaries
+
+We can loop through a dictionary to access its keys, values, or both.
+
+### 1. Loop Through Keys
+
+By default, looping over a dictionary gives its keys.
+
+```python
+student = {
+    "name": "Ritesh",
+    "age": 25,
+    "language": "Python"
+}
+
+for key in student:
+    print(key)
+```
+
+Output:
+
+```text
+name
+age
+language
+```
+
+We can also explicitly use `keys()`:
+
+```python
+for key in student.keys():
+    print(key)
+```
+
+Both approaches give the keys.
+
+---
+
+### 2. Loop Through Values
+
+Use `values()` to loop through all values.
+
+```python
+for value in student.values():
+    print(value)
+```
+
+Output:
+
+```text
+Ritesh
+25
+Python
+```
+
+---
+
+### 3. Loop Through Key-Value Pairs
+
+Use `items()` when we need both the key and value.
+
+```python
+for key, value in student.items():
+    print(key, value)
+```
+
+Output:
+
+```text
+name Ritesh
+age 25
+language Python
+```
+
+Here, tuple unpacking is used.
+
+Each item is a key-value pair:
+
+```python
+("name", "Ritesh")
+```
+
+which is unpacked into:
+
+```python
+key = "name"
+value = "Ritesh"
+```
+
+---
+
+### 🧠 Remember
+
+```text
+for key in dictionary
+→ keys
+
+dictionary.keys()
+→ keys
+
+dictionary.values()
+→ values
+
+dictionary.items()
+→ key + value
+```
+
+### Quick Comparison
+
+| Method | Returns |
+|---|---|
+| `dictionary` | Keys |
+| `dictionary.keys()` | Keys |
+| `dictionary.values()` | Values |
+| `dictionary.items()` | Key-value pairs |
+
+## 14. Nested Dictionaries
+
+A dictionary can contain another dictionary as a value.
+
+### Example
+
+```python
+students = {
+    "student1": {
+        "name": "Ritesh",
+        "age": 25
+    },
+    "student2": {
+        "name": "Amit",
+        "age": 24
+    }
+}
+```
+
+Here, `students` contains two dictionaries:
+
+```text
+student1 → another dictionary
+student2 → another dictionary
+```
+
+### Accessing Nested Values
+
+Use multiple keys to access the nested value.
+
+```python
+print(students["student1"]["name"])
+# Ritesh
+
+print(students["student2"]["age"])
+# 24
+```
+
+The access happens step-by-step:
+
+```text
+students
+   ↓
+"student2"
+   ↓
+{"name": "Amit", "age": 24}
+   ↓
+"age"
+   ↓
+24
+```
+
+### Updating a Nested Value
+
+```python
+students["student1"]["age"] = 26
+
+print(students["student1"]["age"])
+# 26
+```
+
+### 🧠 Remember
+
+```text
+dictionary["outer_key"]["inner_key"]
+→ access a value inside a nested dictionary
+```

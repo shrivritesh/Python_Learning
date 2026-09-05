@@ -63,21 +63,3 @@ language , use = lang
 print(language)
 print(use)
 
-languages = ("Python", "Django", "FastAPI", "Docker", "Python")
-"""
-Your program should:
-
-Print the tuple.
-Print its length.
-Count "Python".
-Find the index of "FastAPI".
-Check whether "Flask" exists.
-Print the tuple in reverse.
-"""
-
-print(tuple(languages))
-print(len(languages))
-print(languages.count("Python"))
-# print(languages.index(2))
-print("Flask" in languages)
-print(languages[::-1])
