@@ -134,3 +134,8 @@ try:
 except ZeroDivisionError:
     print("Handled")
 
+# Question: Where does the exception actually occur, and where is it handled?
+
+# Exception occures - inside the calculate()
+# pass through - process()
+# Exception handle : by ZeroDivisionError
